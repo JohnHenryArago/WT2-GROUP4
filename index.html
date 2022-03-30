@@ -1,23 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./style.css" rel="stylesheet">
-    <title>Home|Welcome</title>
-  </head>
-  <body>
-    <nav class="navbar">
-      <div class="logo">ACT-2C|Group 4 <span></span></div>
-      <ul class="nav-links">
-        <input type="checkbox" id="checkbox_toggle">
-        <label class="navbar_icon" for="checkbox_toggle">&#9776;</label>
-        <div class="menu">
-          <li><a href="#">Home</a></li>
-          <li><a href="Blogs.html">Blogs</a></li>
-          <li><a href="people.html">People</a></li>
-        </div>
-      </ul>
-    </nav>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  <title>Welcome Home</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+</head>
+<body>
+  <!--Header-->
+  <header>
+  <nav class="navbar">
+    <div class="logo">
+      <a href="https://ibb.co/fH31vmV"><img src="https://i.ibb.co/89yKcFn/3D-TEXT.png" alt="3D-TEXT" ></a>
+    </div>
+    <div class="toggle">
+      <a href="#"><ion-icon name="menu-outline"></ion-icon></a>
+    </div>
+    <ul class="menu">
+      <li><a href="#">Home</a></li>
+      <li><a href="blog.html">Blogs</a></li>
+      <li><a href="people.html">People</a></li>
+      
+    </ul>
+  </nav>
+</header>
+<!--End of header-->
+<!-- Footer -->
+<footer>
+  <div class="social-links">
+    <a href="#"><i class="fab fa-facebook"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-pinterest"></i></a>
+  </div>
+  <span> Home Page Footer</span>
+</footer>
+<!-- End of Footer -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+ <script>
+   $(function(){
+     $(".toggle").on("click", function(){
+       if($(".menu").hasClass("active")){
+         $(".menu").removeClass("active");
+         $(this).find("a").html("<ion-icon name='menu-outline'></ion-icon>");
+
+       } else{
+         $(".menu").addClass("active");
+         $(this).find("a").html("<ion-icon name='close-outline'></ion-icon>")
+       }
+     });
+   });
+ </script>
+</body>
 </html>
