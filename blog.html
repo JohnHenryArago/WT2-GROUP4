@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to blog</title>
+  <link rel="stylesheet" href="blagstyle.css"/>
+  <link rel="shortcut icon" href="https://www.svgrepo.com/show/71087/coffee.svg">
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+</head>
+<body>
+  <!--Header-->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="https://ibb.co/fH31vmV"><img src="https://i.ibb.co/89yKcFn/3D-TEXT.png" alt="3D-TEXT" ></a>
+      </div>
+      <div class="toggle">
+        <a href="#"><ion-icon name="menu-outline"></ion-icon></a>
+      </div>
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="blog.html">Blogs</a></li>
+        <li><a href="people.html">People</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+  <!--End of header-->
+  <!--Blog section-->
+  <section id="blog">
+    <!--heading-->
+    <div class="blog-heading">
+      <span>My recent posts</span>
+      <h3>My blog</h3>
+    </div>
+    <!--End of heading-->
+
+    <!--blog-container-->
+    <div class="blog-container">
+
+      <!--box-1-->
+      <div class="blog-box">
+        <!--img-->
+        <div class="blog-img">
+          <img src="https://images.pexels.com/photos/11389730/pexels-photo-11389730.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="blog">
+        </div>
+        <!--text-->
+        <div class="blog-text">
+          <span>28, March 2022 / Blog</span>
+          <a href="#" class="blog-title">What has happened of all of te web design ideas?</a>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero accusantium et ipsum ut ea fugit nobis eligendi itaque ipsam vel perspiciatis nihil, ducimus blanditiis libero dolore hic dignissimos corporis? Quo.</p>
+          <a href="#">Read More</a>
+        </div>
+      </div>
+       <!--box-1-->
+       <div class="blog-box">
+        <!--img-->
+        <div class="blog-img">
+          <img src="https://images.pexels.com/photos/11389730/pexels-photo-11389730.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="blog">
+        </div>
+        <!--text-->
+        <div class="blog-text">
+          <span>28, March 2022 / Blog</span>
+          <a href="#" class="blog-title">What has happened of all of te web design ideas?</a>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero accusantium et ipsum ut ea fugit nobis eligendi itaque ipsam vel perspiciatis nihil, ducimus blanditiis libero dolore hic dignissimos corporis? Quo.</p>
+          <a href="#">Read More</a>
+        </div>
+      </div>
+       <!--box-1-->
+       <div class="blog-box">
+        <!--img-->
+        <div class="blog-img">
+          <img src="https://images.pexels.com/photos/11389730/pexels-photo-11389730.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="blog">
+        </div>
+        <!--text-->
+        <div class="blog-text">
+          <span>28, March 2022 / Blog</span>
+          <a href="#" class="blog-title">What has happened of all of te web design ideas?</a>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero accusantium et ipsum ut ea fugit nobis eligendi itaque ipsam vel perspiciatis nihil, ducimus blanditiis libero dolore hic dignissimos corporis? Quo.</p>
+          <a href="#">Read More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+<footer>
+  <div class="social-links">
+    <a href="#"><i class="fab fa-facebook"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-pinterest"></i></a>
+  </div>
+  <span> Blog Page Footer</span>
+</footer>
+<!-- End of Footer -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+  $(function(){
+    $(".toggle").on("click", function(){
+      if($(".menu").hasClass("active")){
+        $(".menu").removeClass("active");
+        $(this).find("a").html("<ion-icon name='menu-outline'></ion-icon>");
+
+      } else{
+        $(".menu").addClass("active");
+        $(this).find("a").html("<ion-icon name='close-outline'></ion-icon>")
+      }
+    });
+  });
+</script>
+</body>
+</html>
